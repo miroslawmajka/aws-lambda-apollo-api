@@ -1,0 +1,27 @@
+{
+  "name": "lambda-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miroslawmajka/lambda-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miroslawmajka/lambda-graphql/issues"
+  },
+  "homepage": "https://github.com/miroslawmajka/lambda-graphql#readme",
+  "dependencies": {
+    "apollo-server-lambda": "^2.17.0",
+    "graphql": "^15.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  }
+}
