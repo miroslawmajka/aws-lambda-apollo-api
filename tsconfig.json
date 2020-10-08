@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceRoot": "src",
+    "module": "commonjs",
+    "target": "ES2015",
+    "sourceMap": true,
+    "listEmittedFiles": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", ".serverless/**/*", ".vscode /**/*"]
+}

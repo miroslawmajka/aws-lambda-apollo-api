@@ -1,0 +1,3 @@
+{
+  "body": "{\"operationName\":null,\"variables\":{},\"query\":\"{\\n  nodeVersion\\n  hello\\n}\\n\"}"
+}
