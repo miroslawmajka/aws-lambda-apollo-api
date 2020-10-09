@@ -20,6 +20,10 @@ npm install
 npm start
 ```
 
+You can now edit the `.graphql-data.json` file to adjust the query or mutation. 
+
+When ready just re-run the `npm start` command to test out the Lambda function locally.
+
 3. Run deployment to AWS:
 
 ```bash

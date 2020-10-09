@@ -38,7 +38,7 @@ async function runApollo(event: any, context: any, apollo: any) {
   });
 }
 
-exports.graphqlHandler = async (event, context, cb) => {
+exports.graphqlHandler = async (event: any, context: any, cb: any) => {
   const apollo = server.createHandler({
     cors: {
       origin: '*',
@@ -46,13 +46,6 @@ exports.graphqlHandler = async (event, context, cb) => {
       allowedHeaders: ['Content-Type', 'Origin', 'Accept']
     }
   });
-
-  // Local development ONLY
-  event.httpMethod = event.httpMethod || 'POST';
-  event.headers = {
-    'content-type': 'application/json',
-    ...(event.headers || {})
-  };
 
   try {
     const response = await runApollo(event, context, apollo);

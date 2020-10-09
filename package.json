@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "serverless invoke local -f graphql -p dev-data.json",
+    "setup": "node create-local-lambda-event-data.js",
+    "invoke": "serverless invoke local -f graphql -p .lambda-event-data.json",
+    "start": "npm run setup && npm run invoke",
     "deploy": "serverless deploy"
   },
   "repository": {
