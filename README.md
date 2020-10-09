@@ -8,26 +8,37 @@ Deployments done with [Serverless](https://www.serverless.com/).
 
 ## Setup
 
-1. Install dependencies:
+1. Install dependencies and run the boilerplate query:
 
 ```bash
 npm install
-```
-
-2. Run locally:
-
-```bash
 npm start
 ```
 
-You can now edit the `.graphql-data.json` file to adjust the query or mutation. 
+2. You can now edit the `.graphql-data.json` file to adjust the query or mutation. 
 
-When ready just re-run the `npm start` command to test out the Lambda function locally.
+3. When ready just re-run the `npm start` command to test out the Lambda function locally.
 
-3. Run deployment to AWS:
+## AWS Deployment
+
+1. Run deployment to AWS:
 
 ```bash
 npm run deploy
 ```
 
-4. Navigate to the GraphQL Playground available at https://RANDOM-ID.execute-api.eu-west-1.amazonaws.com/dev/graphql.
+2. Navigate to the GraphQL Playground available at https://RANDOM-ID.execute-api.eu-west-1.amazonaws.com/dev/graphql.
+
+3. Run clean up the AWS application stack run:
+
+```bash
+npm run remove
+```
+
+## Development
+
+You can run `npm run invoke-watch` to have the **Serverless** framwork monitor for file changes and re-run the mock Lambda environment.
+
+### TODO
+
+Figure out VS Code debugging when TypeScript is involved with Serverless.
