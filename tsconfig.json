@@ -1,11 +1,17 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "outDir": "dist",
     "sourceRoot": "src",
+    "outDir": ".build",
     "module": "commonjs",
     "target": "ES2015",
+    "moduleResolution": "node",
+    "lib": [
+      "es2015"
+    ],
+    "rootDir": "./",
     "sourceMap": true,
+    "allowJs": true,
     "listEmittedFiles": true,
     "esModuleInterop": true
   },

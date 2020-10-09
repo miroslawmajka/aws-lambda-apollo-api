@@ -16,31 +16,9 @@
                 "<node_internals>/**"
             ],
             "type": "pwa-node",
-            "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/.build/**/*.js"
             ]
-        },
-        {
-          "type": "node",
-          "request": "launch",
-          "name": "Serverless via Node",
-          "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
-          "args": [
-            "invoke",
-            "local",
-            "-f",
-            "graphql",
-            "-p",
-            ".lambda-event-data.json"
-          ],
-          "sourceMaps": true,
-          "runtimeArgs": ["--lazy"],
-          "outFiles": [
-            "${workspaceFolder}/.build/**/*.js" ],
-          "protocol": "inspector",
-          "runtimeExecutable": "node",
-          "preLaunchTask": "tsc: build - tsconfig.json",
         }
     ]
 }

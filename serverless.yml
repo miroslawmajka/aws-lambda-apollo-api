@@ -1,4 +1,4 @@
-service: apollo-lambda
+service: lambda-graphql
 
 plugins:
   - serverless-plugin-typescript
@@ -7,9 +7,10 @@ provider:
   name: aws
   runtime: nodejs12.x
   region: eu-west-1
+  
 functions:
-  graphql:
-    handler: src/graphql.graphqlHandler
+  lambdaGraphqlFunction:
+    handler: src/lambda-handler.graphqlHandler
     events:
       - http:
           path: graphql

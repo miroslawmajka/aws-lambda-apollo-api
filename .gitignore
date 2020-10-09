@@ -103,6 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
+# Serverless TypeScript output directory
 .build
-.graphql-data.json
-.lambda-event-data.json
+
+# Development Lambda event data files
+.*-data.json
