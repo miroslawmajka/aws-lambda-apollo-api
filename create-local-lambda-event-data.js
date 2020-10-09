@@ -4,9 +4,9 @@ const GRAPHQL_DATA_JSON = './.graphql-data.json';
 
 if (!fs.existsSync(GRAPHQL_DATA_JSON)) {
     const GRAPHQL_DATA_TEMPLATE = {
-        "operationName":null,
-        "variables":{},
-        "query": "{ hello nodeVersion }"
+        operationName: null,
+        variables: {},
+        query: "{ hello nodeVersion }"
     }
 
     let lambdaDataJson = JSON.stringify(GRAPHQL_DATA_TEMPLATE, null, 2);
