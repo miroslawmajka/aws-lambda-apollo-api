@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Serverless via NPM",
+            "request": "launch",
+            "runtimeArgs": [
+                "run",
+                "invoke"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/.build/**/*.js"
+            ]
+        },
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "Serverless via Node",
+          "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
+          "args": [
+            "invoke",
+            "local",
+            "-f",
+            "graphql",
+            "-p",
+            ".lambda-event-data.json"
+          ],
+          "sourceMaps": true,
+          "runtimeArgs": ["--lazy"],
+          "outFiles": [
+            "${workspaceFolder}/.build/**/*.js" ],
+          "protocol": "inspector",
+          "runtimeExecutable": "node",
+          "preLaunchTask": "tsc: build - tsconfig.json",
+        }
+    ]
+}
