@@ -1,5 +1,5 @@
 {
-  "name": "lambda-graphql",
+  "name": "aws-lambda-apollo-api",
   "version": "1.0.0",
   "description": "",
   "main": "src/graphql-lambda.ts",
@@ -16,8 +16,8 @@
     "url": "git+https://github.com/miroslawmajka/lambda-graphql.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Miroslaw Majka",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/miroslawmajka/lambda-graphql/issues"
   },
