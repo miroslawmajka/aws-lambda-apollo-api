@@ -1,4 +1,4 @@
-# Lambda GraphQL
+# AWS Lambda Apollo API
 
 Running GraphQL playground in AWS Lambda.
 
