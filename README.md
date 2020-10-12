@@ -1,10 +1,6 @@
 # AWS Lambda Apollo API
 
-Running GraphQL playground in AWS Lambda.
-
-Using the [Apollo Guide](https://www.apollographql.com/docs/apollo-server/deployment/lambda/) for setting this up.
-
-Deployments done with [Serverless](https://www.serverless.com/).
+Running **GraphQL** playground in **AWS Lambda** with the help of **TypeScript** and **Serverless**.
 
 ## Setup
 
@@ -15,7 +11,7 @@ npm install
 npm start
 ```
 
-2. You can now edit the `.graphql-data.json` file to adjust the query or mutation. 
+2. You can now edit the `.graphql-data.json` file to adjust the query or mutation.
 
 3. When ready just re-run the `npm start` command to test out the Lambda function locally.
 
@@ -39,6 +35,10 @@ npm run remove
 
 You can run `npm run invoke-watch` to have the **Serverless** framwork monitor for file changes and re-run the mock Lambda environment.
 
-### TODO
+Thanks to the help of this article and repository you can debug the function in VS Code:
 
-Figure out VS Code debugging when TypeScript is involved with Serverless.
+## References
+
+- [Apollo Development Guide for AWS Lambda](https://www.apollographql.com/docs/apollo-server/deployment/lambda/)
+
+- [Debugging TypeScript AWS Lambda with VS Code and Serverless](https://medium.com/@enrico.portolan/debugging-typescript-aws-lambda-with-vscode-and-serverless-967f2a201fab)
