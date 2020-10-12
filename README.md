@@ -15,7 +15,7 @@ npm install
 npm start
 ```
 
-2. You can now edit the `.graphql-data.json` file to adjust the query or mutation. 
+2. You can now edit the `.graphql-data.json` file to adjust the query or mutation.
 
 3. When ready just re-run the `npm start` command to test out the Lambda function locally.
 
@@ -39,11 +39,8 @@ npm run remove
 
 You can run `npm run invoke-watch` to have the **Serverless** framwork monitor for file changes and re-run the mock Lambda environment.
 
-### TODO
-
-Figure out VS Code debugging when TypeScript is involved with Serverless.
+With the help of this article and repository you can debug the code in VS Code:
 
 https://medium.com/@enrico.portolan/debugging-typescript-aws-lambda-with-vscode-and-serverless-967f2a201fab
 
 https://github.com/enricop89/aws-lambda-typescript-debug
-
