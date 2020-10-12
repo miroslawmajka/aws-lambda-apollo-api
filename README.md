@@ -42,3 +42,8 @@ You can run `npm run invoke-watch` to have the **Serverless** framwork monitor f
 ### TODO
 
 Figure out VS Code debugging when TypeScript is involved with Serverless.
+
+https://medium.com/@enrico.portolan/debugging-typescript-aws-lambda-with-vscode-and-serverless-967f2a201fab
+
+https://github.com/enricop89/aws-lambda-typescript-debug
+
