@@ -1,7 +1,9 @@
 {
   "name": "aws-lambda-apollo-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "AWS Lambda Apollo API",
+  "author": "Miroslaw Majka",
+  "license": "MIT",
   "main": "src/graphql-lambda.ts",
   "scripts": {
     "setup": "node create-local-lambda-event-data.ts",
@@ -16,19 +18,17 @@
     "url": "git+https://github.com/miroslawmajka/lambda-graphql.git"
   },
   "keywords": [],
-  "author": "Miroslaw Majka",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/miroslawmajka/lambda-graphql/issues"
   },
   "homepage": "https://github.com/miroslawmajka/lambda-graphql#readme",
   "dependencies": {
-    "apollo-server-lambda": "^2.17.0",
+    "apollo-server-lambda": "^2.18.2",
     "graphql": "^15.3.0"
   },
   "devDependencies": {
-    "prettier": "^2.1.1",
-    "serverless": "^2.6.0",
+    "prettier": "^2.1.2",
+    "serverless": "^2.7.0",
     "serverless-plugin-typescript": "^1.1.9",
     "typescript": "^4.0.3"
   }

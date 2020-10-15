@@ -12,39 +12,39 @@ const apolloConfig: ApolloConfig = {
     headers: event.headers,
     functionName: context.functionName,
     event,
-    context
+    context,
   }),
   playground: {
-    endpoint: '/dev/graphql' // The API Gateway endpoint "dev" part depends on the stage being deployed
-  }
+    endpoint: '/dev/graphql', // The API Gateway endpoint "dev" part depends on the stage being deployed
+  },
 };
 
 const apolloHandlerOptions: CreateHandlerOptions = {
   cors: {
     origin: '*',
     methods: 'POST',
-    allowedHeaders: ['Content-Type', 'Origin', 'Accept']
-  }
+    allowedHeaders: ['Content-Type', 'Origin', 'Accept'],
+  },
 };
 
 const apolloServer = new ApolloServer(apolloConfig);
 
 export const graphqlHandler = async (
   event: APIGatewayProxyEvent,
-  context: Context
+  context: Context,
 ): Promise<Object> => {
   const apolloHandler = apolloServer.createHandler(apolloHandlerOptions);
 
   async function runApolloHandlerAsPromise(
     event: APIGatewayProxyEvent,
     context: Context,
-    apolloHandler: any
+    apolloHandler: any,
   ): Promise<Object> {
     return new Promise((resolve: Function, reject: Function) => {
       apolloHandler(
         event,
         context,
-        (error: any, body: any): APIGatewayProxyCallback => (error ? reject(error) : resolve(body))
+        (error: any, body: any): APIGatewayProxyCallback => (error ? reject(error) : resolve(body)),
       );
     });
   }
